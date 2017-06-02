@@ -1,0 +1,68 @@
+input[type=button], input[type=submit] {
+    background-color: #000000; /* Green */
+    border: none;
+	border-radius: 5px;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+}
+
+#save {
+top: 30px;
+left: 930px;
+position: fixed;
+}
+
+#locker {
+width: 240px;
+height: 250px;
+background: url(images\locker.png);
+}
+
+ul {
+list-style: none;
+}
+
+li {
+position: absolute;
+}
+
+
+
+
+input[type="checkbox"] {
+    display:none;
+    
+}
+
+label {
+font-size: 20px;
+}
+
+input[type="checkbox"] + label {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin: -1px 4px 0 0;
+    vertical-align:middle;
+    background:url(/images/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+    
+}
+input[type="checkbox"]:checked + label{
+    background:url(/images/check_radio_sheet.png) -19px top no-repeat;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#sidenote {
+	background: rgba(255,255,0, 1);
+	}

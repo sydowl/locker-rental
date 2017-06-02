@@ -1,5 +1,5 @@
 <?php
-require_once('./config/config.php');
+require_once('../config/config.php');
 $left_pos = 10;
 $locker_row = 60;
 $i = 240;
@@ -8,7 +8,7 @@ $beginpage = <<<START_HTML
 <!DOCTYPE html>
 <html>
   <head>
-<link rel="stylesheet" type="text/css" href="http://vm.library.reed.edu/css/lockers.css">
+<link rel="stylesheet" type="text/css" href="../css/lockers.css">
     <meta content="text/html; charset=windows-1252" http-equiv="content-type">
     <title>Red Lockers LL1</title>
   </head>
@@ -20,8 +20,8 @@ START_HTML;
 $endpage = <<<END_HTML
     </ul>
     <p></p>
-    <script type="text/javascript" src="../../js/jquery-1.6.1.min.js"></script>
-    <script type="text/javascript" src="../../js/lockers.js" async></script>
+    <script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="../js/lockers.js" async></script>
 
 <form style="top: 400px; left:10px; position: relative;"  accept-charset="UTF-8" class="form_style" style="top:830px; left: 175px;" action="#" onsubmit ="AssignLocker();">
 <input type="hidden" id="assignscript" value=" combo_locker_ll1_assign.php" />
@@ -69,7 +69,7 @@ url(\'../../images/locker_taken.png\'); left:'. $left_pos .'px; top:'. $locker_r
 $num. '</li>';
 }
 
-//Draw the lockers according to their real layout using some math to determine start of new columne
+//Draw the lockers according to their real layout using some math to determine start of new column
 
 $i++;
 $locker_row = $locker_row + 89;

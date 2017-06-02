@@ -1,0 +1,37 @@
+body, #button, select {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    line-height: 15px;
+    margin: 15px;
+}
+a, h3 {
+    color: #910B12;
+    text-decoration: none;
+}
+
+#sidenote {
+   font-size: .65em;
+   font-color: gray;
+}
+
+#nameplate h1 a {
+  display: block;
+  margin: -7px;
+  width: 266px;
+  height: 0;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: url(http://library.reed.edu/assets/images/reed-library-nameplate-gray.png) no-repeat;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  -moz-appearance: textfield;
+  margin: 0; 
+}
+
+input[type=number] {
+-moz-appearance: textfield;
+}
